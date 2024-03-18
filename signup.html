@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./Favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./Favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./Favicon/favicon-16x16.png">
+    <link rel="manifest" href="./Favicon/site.webmanifest">
+    <link rel="shortcut icon" href="./Favicon/favicon.ico" type="image/x-icon">
+
+    <!-- Remix icon CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <!-- Boxicon CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+
+    <!-- Fontawesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- lni CDN -->
+    <link rel="stylesheet" href="https://cdn.lineicons.com/4.0/lineicons.css" />
+
+    <!-- External Css -->
+    <link rel="stylesheet" href="./CSS/signup.css" />
+    <link rel="stylesheet" href="./CSS/user.css">
+    <link rel="stylesheet" href="./CSS/contact.css">
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <link rel="stylesheet" href="./CSS/footer.css">
+
+    <!-- Title -->
+    <title>Lumina - Sign In/Up</title>
+
+    <!-- Meta Tags -->
+    <meta name="title" content="Start Printing Today with Lumina">
+    <meta name="description"
+        content="Looking for Online Printers in Nepal? Lumina.com.np online shopping site is one of the largest Printer shopping store in Kathmandu, Biratnagar across the country - Shop Now! ✓FREE Delivery" />
+    <meta property="og:url" content="https://www.lumina.com.np/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Online Printers in Nepal | Best Deals, Prices &amp; Discounts - lumina.com.np" />
+
+    <!-- Internal CSS -->
+    <style>
+        .main {
+            top: 0;
+        }
+    </style>
+</head>
+<!--Background color of body is changed using inline Css -->
+
+<body style="background-color: #f8f8f8">
+    <!-- Navigation Bar -->
+    <section class="main">
+        <!-- NavBar -->
+        <div class="navbar">
+            <div class="navContainer container">
+                <div class="logo">
+                    <!-- Logo of the website -->
+                    <a href="index.html">Lumina.</a>
+                </div>
+
+                <nav>
+                    <ul class="navlist">
+                        <!-- List of Menus in Navbar -->
+                        <li class="navlist-items"><a href="index.html">Home</a></li>
+                        <li class="navlist-items">
+                            <a href="products.html">Products</a>
+                        </li>
+                        <li class="navlist-items"><a href="blog.html">Blog</a></li>
+                        <li class="navlist-items">
+                            <a href="research.html">Research</a>
+                        </li>
+                        <li class="navlist-items"><a href="about.html">About Us</a></li>
+                        <li class="navlist-items"><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+
+                <div class="icons">
+                    <a href="user.html" class="remove-a"><i class="bx bx-user"></i>></a>
+                    <a href="cart.html" class="remove-a"><i class="bx bx-cart-alt"></i>
+                        <span class="cart-badge">
+                            <span id="cart-count" class="cart-count">0</span>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- Navbar Ends -->
+    </section>
+    <!-- Header -->
+    <header class="user-header">
+        <h1>Create Your Lumina Account</h1>
+    </header>
+
+    <!-- Sign In Form -->
+    <section id="login-section" class="container">
+        <div class="form-container">
+            <form name="loginForm" onsubmit="return signup()">
+
+                <div class="form-group">
+                    <div class="label">
+                        <label for="id">Email or Phone:</label>
+                        <span>Already a member? <a id="logIn" href="user.html">Log in</a></span>
+                    </div>
+                    <input type="text" name="id" id="id" placeholder="Email or Phone Number">
+
+                </div>
+
+                <div class="form-group">
+                    <label for="fullName">Full Name:</label>
+                    <input type="text" name="fullName" id="fullName" placeholder="Enter your first and last name">
+                </div>
+
+                <div class="form-group">
+
+                    <div class="label">
+                        <label for="password">Password:</label>
+                        <span id="show"><i class="fa-regular fa-eye"></i> Show
+                        </span>
+                        <span id="hide"><i class="fa-regular fa-eye-slash"></i> Hide
+                        </span>
+                    </div>
+
+                    <input type="password" name="password" id="password" placeholder="Password">
+
+                </div>
+
+                <div class="form-group">
+                    <label for="gender">Gender:</label>
+                    <select id="gender" name="gender">
+                        <option value="select" disabled selected>Select</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="birthdate">Birthdate:</label>
+                    <input type="date" id="birthdate" name="birthdate">
+                </div>
+
+                <div id="f-g-cbox">
+                    <input type="checkbox" name="enablenewsletter" id="enablenewsletter" checked>
+                    <span>I'd like to receive exclusive offers and promotions via SMS</span>
+                </div>
+
+
+                <div class="form-group">
+                    <button type="submit">Sign Up</button>
+                </div>
+                <!-- Diviver -->
+                <div class="divider-box">
+                    <span class="divider"></span>
+                    <span>or</span>
+                    <span class="divider"></span>
+                </div>
+
+                <!-- Continue with Section -->
+                <div class="myButton" id="f-button">
+                    <div class="button-icon">
+                        <svg role="img" height="24" width="24" aria-hidden="true" fill="white" viewBox="0 0 24 24"
+                            data-encore-id="icon">
+                            <path
+                                d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.093 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.563V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="button-text">
+                        Continue with Facebook
+                    </div>
+                </div>
+                <div class="myButton" id="g-button">
+                    <div class="button-icon">
+                        <svg role="img" height="24" width="24" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 48 48">
+                            <defs>
+                                <path id="a"
+                                    d="M44.5 20H24v8.5h11.8C34.7 33.9 30.1 37 24 37c-7.2 0-13-5.8-13-13s5.8-13 13-13c3.1 0 5.9 1.1 8.1 2.9l6.4-6.4C34.6 4.1 29.6 2 24 2 11.8 2 2 11.8 2 24s9.8 22 22 22c11 0 21-8 21-22 0-1.3-.2-2.7-.5-4z">
+                                </path>
+                            </defs>
+                            <clipPath id="b">
+                                <use xlink:href="#a" overflow="visible"></use>
+                            </clipPath>
+                            <path clip-path="url(#b)" fill="#FBBC05" d="M0 37V11l17 13z"></path>
+                            <path clip-path="url(#b)" fill="#EA4335" d="M0 11l17 13 7-6.1L48 14V0H0z"></path>
+                            <path clip-path="url(#b)" fill="#34A853" d="M0 37l30-23 7.9 1L48 0v48H0z"></path>
+                            <path clip-path="url(#b)" fill="#4285F4" d="M48 48L17 24l-4-3 35-10z"></path>
+                        </svg>
+                    </div>
+                    <div class="button-text">
+                        Continue with Google
+                    </div>
+                </div>
+
+            </form>
+        </div>
+
+
+    </section>
+
+
+    <!-- Footer Section -->
+    <section class="footer">
+        <footer class="container">
+            <div class="col">
+                <h1 class="logo .f-logo"><a href="#">Lumina.</a></h1>
+                <h4 class="pt-10 capital">Contact</h4>
+                <p class="pt-10 "><strong>Address:</strong> Itahari 07, Sunsari, Nepal</p>
+                <p><strong>E-mail:</strong> Customerservice@lumina.com</p>
+                <p><strong>Phone:</strong> +977 9824448397</p>
+
+                <div class="social-links">
+                    <h4 class="capital">Follow Us</h4>
+                    <a href="#" class="social-link"><i class="lni lni-facebook"></i></a>
+                    <a href="#" class="social-link"><i class="lni lni-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="lni lni-twitter"></i></a>
+
+                </div>
+
+            </div>
+
+            <div class="col">
+                <h4 class="capital">About</h4>
+                <a href="#" class="pt-10">About Us</a>
+                <a href="#">Delivery Information</a>
+                <a href="#">Refund Policy</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Contact Us</a>
+            </div>
+
+            <div class="col">
+                <h4 class="capital">My Account</h4>
+                <a href="#" class="pt-10">Sign In</a>
+                <a href="#">View Cart</a>
+                <a href="#">My Wishlist</a>
+                <a href="#">Track My Order</a>
+                <a href="#">Help</a>
+            </div>
+
+            <div class="col install-app">
+                <h4 class="capital">Install App</h4>
+                <p class="pt-10">From App Store or Google Play</p>
+                <div class="install-row">
+                    <img src="./Images/Store/app.jpg" alt="App Store">
+                    <img src="./Images/Store/play.jpg" alt="Google Play Store">
+                </div>
+                <p class="pt-10">Secured Payement Gateway</p>
+                <img src="./Images/Payment/pay.png" alt="Payement Gateway" class="pt-10">
+            </div>
+
+            <div class="copyright">
+                <p>&copy; Lumina 2024. All Rights Reserved.</p>
+            </div>
+        </footer>
+    </section>
+    <!-- JavaScript-->
+    <script src="./JavaScript/signup.js"></script>
+    <script src="./JavaScript/counter.js"></script>
+
+</body>
+
+</html>

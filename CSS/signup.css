@@ -1,0 +1,74 @@
+/* Form Section */
+#f-g-cbox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+#enablenewsletter {
+    /* Hide the default checkbox */
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+}
+
+/* Unchecked state */
+#enablenewsletter::before {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+    background-color: #fff;
+    border-radius: 2px;
+    border: 2px solid #ccc;
+    transform: translate(2px, 2px);
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+/* Checked state */
+#enablenewsletter:checked::before {
+    content: "\2713";
+    display: block;
+    width: 16px;
+    height: 16px;
+    font-size: 14px;
+    color: #fff;
+    background-color: var(--text-color-black);
+    border-radius: 2px;
+    outline: none;
+    border: none;
+    text-align: center;
+    line-height: 16px;
+    transform: translate(2px, 2px);
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+#f-g-cbox span {
+    font-size: 1.29rem;
+    font-family: var(--poppins-font);
+}
+
+
+.form-group input,
+.form-group select {
+    border: 1px solid var(--light-gray);
+    outline: none;
+    width: 100%;
+    padding: 14px;
+    margin: 6px 0;
+    font-size: 14px;
+}
+
+#logIn {
+    font-family: var(--poppins-font);
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+}

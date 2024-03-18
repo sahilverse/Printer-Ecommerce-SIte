@@ -1,0 +1,239 @@
+/* Products Section */
+.cart-container {
+    margin-top: 100px;
+
+}
+
+#cartHeader {
+    display: flex;
+    border: 1px solid var(--light-gray);
+    padding: 10px 12px;
+    cursor: pointer;
+    overflow: hidden;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    max-width: 968px;
+    margin: auto;
+    margin: 30px auto;
+}
+
+.selection {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+#selectAll {
+    /* Hide the default checkbox */
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 20px;
+    height: 20px;
+    /* border: 2px solid #ccc; */
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+}
+
+
+
+#selectAll::before {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+    background-color: #fff;
+    border-radius: 2px;
+    border: 2px solid #ccc;
+    transform: translate(2px, 2px);
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+#selectAll:checked::before {
+    content: "\2713";
+    display: block;
+    width: 16px;
+    height: 16px;
+    font-size: 14px;
+    color: #fff;
+    background-color: var(--text-color-black);
+    border-radius: 2px;
+    outline: none;
+    border: none;
+    text-align: center;
+    line-height: 16px;
+    transform: translate(2px, 2px);
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+#selectLabel {
+    text-transform: uppercase;
+    font-size: 1.3rem;
+}
+
+
+.delContainer {
+    display: flex;
+    align-items: center;
+}
+
+#delete {
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 1.3rem;
+    margin-bottom: 0;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center
+}
+
+#delete:hover {
+    color: var(--color-o);
+}
+
+.products-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+.product {
+    position: relative;
+    text-align: start;
+    border: 1px solid var(--light-gray);
+    padding: 10px 12px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    overflow: hidden;
+    display: flex;
+    width: 968px;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.productShowIntro {
+    display: flex;
+    gap: 1.6rem;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.product:hover {
+    border: 1px solid var(--text-color-black);
+}
+
+.selectProduct {
+    border: 1px solid var(--text-color-black);
+}
+
+
+
+.product img {
+    width: 10rem;
+    border-radius: 20px;
+}
+
+.brandName {
+    font-family: var(--poppins-font);
+    text-transform: uppercase;
+}
+
+.product-d h5 {
+    font-size: 1.3rem;
+    font-weight: 500;
+    font-family: var(--nunito-font);
+    margin-top: 5px;
+    max-height: 3.6em;
+    line-height: 1.3em;
+    max-width: 250px;
+    overflow: hidden;
+    text-transform: uppercase;
+    white-space: normal;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+
+}
+
+.priceContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.6;
+    margin-top: 10px;
+    position: absolute;
+    right: 350px;
+
+}
+
+.cart-price {
+    font-size: 1.4rem;
+    font-family: 400;
+    font-family: var(--poppins-font);
+
+}
+
+.dPrice {
+    font-size: 1.3rem;
+    font-family: var(--poppins-font);
+    text-decoration: line-through;
+}
+
+
+.emptyCart {
+    padding: 10px;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.productQuantity {
+    display: flex;
+    justify-content: center;
+    padding-right: 20px;
+    align-items: center;
+
+}
+
+.productQuantity span {
+    font-size: 1.8rem;
+}
+
+.quantity {
+    width: 25px;
+    font-size: 1.6rem;
+    text-align: center;
+    outline: none;
+    border: 1px solid var(--text-color-p);
+    border-radius: 5px;
+    -moz-appearance: textfield;
+    appearance: textfield;
+    background-color: transparent;
+    border: none;
+    padding-top: 3px;
+
+}
+
+/* removing increase and decrease in input type number */
+.quantity::-webkit-inner-spin-button,
+.quantity::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+
+.increase,
+.decrease {
+    font-size: 3rem;
+    padding-top: 5px;
+}
+
+.increase:hover,
+.decrease:hover {
+    color: var(--color-g);
+}

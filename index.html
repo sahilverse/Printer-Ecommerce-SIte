@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./Favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./Favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./Favicon/favicon-16x16.png">
+    <link rel="manifest" href="./Favicon/site.webmanifest">
+    <link rel="shortcut icon" href="./Favicon/favicon.ico" type="image/x-icon">
+
+    <!-- Remix icon CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <!-- Boxicon CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+
+    <!-- Fontawesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- lni CDN -->
+    <link rel="stylesheet" href="https://cdn.lineicons.com/4.0/lineicons.css" />
+
+    <!-- External Css -->
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <link rel="stylesheet" href="./CSS/footer.css">
+
+    <!-- Title -->
+    <title>Lumina - Home</title>
+
+    <!-- Meta Tags -->
+    <meta name="title" content="Start Printing Today with Lumina">
+    <meta name="description"
+        content="Looking for Online Printers in Nepal? Lumina.com.np online shopping site is one of the largest Printer shopping store in Kathmandu, Biratnagar across the country - Shop Now! ✓FREE Delivery" />
+    <meta property="og:url" content="https://www.lumina.com.np/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Online Printers in Nepal | Best Deals, Prices &amp; Discounts - lumina.com.np" />
+
+    <!-- Internal CSS -->
+    <style>
+        /* Styling for marquee section */
+        #marquee-section {
+            background-color: var(--secondary-color);
+            padding: 8px 0;
+            overflow: hidden;
+        }
+
+        .marquee-container {
+            white-space: nowrap;
+            animation: marquee 60s linear infinite;
+        }
+
+        .marquee-container span {
+            margin-right: 150px;
+            text-transform: uppercase;
+            border-bottom: 2px solid transparent;
+            cursor: pointer;
+            font-weight: 400;
+            font-family: var(--poppins-font);
+            font-size: 14px;
+        }
+
+        .marquee-container span:hover {
+            border-bottom: 1px solid var(--text-color-black);
+        }
+
+        /* Keyframes is used to animate the marquee container that flows from right to left */
+        @keyframes marquee {
+            0% {
+                /* the animation starts from the position where x is 0 */
+                transform: translateX(0%);
+            }
+
+            100% {
+                /* the animation ends in the -100% position in x direction*/
+                transform: translateX(-100%);
+            }
+        }
+    </style>
+</head>
+<!--Background color of body is changed using inline Css -->
+
+<body style="background-color: #f8f8f8">
+    <!-- Navigation Bar -->
+    <section class="main">
+        <!-- Marquee -->
+        <div id="marquee-section">
+            <div class="marquee-container">
+                <!-- It contains Span tags that are created by the use of javaScript -->
+            </div>
+        </div>
+        <!-- NavBar -->
+        <div class="navbar">
+            <div class="navContainer container">
+                <div class="logo">
+                    <!-- Logo of the website -->
+                    <a href="index.html">Lumina.</a>
+                </div>
+
+                <nav>
+                    <ul class="navlist">
+                        <!-- List of Menus in Navbar -->
+                        <li class="navlist-items active"><a href="#banner">Home</a></li>
+                        <li class="navlist-items">
+                            <a href="products.html">Products</a>
+                        </li>
+                        <li class="navlist-items"><a href="blog.html">Blog</a></li>
+                        <li class="navlist-items">
+                            <a href="research.html">Research</a>
+                        </li>
+                        <li class="navlist-items"><a href="about.html">About Us</a></li>
+                        <li class="navlist-items"><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+
+                <div class="icons">
+                    <a href="user.html" class="remove-a"><i class="bx bx-user"></i>></a>
+                    <a href="cart.html" class="remove-a"><i class="bx bx-cart-alt"></i>
+                        <span class="cart-badge">
+                            <span id="cart-count" class="cart-count">0</span>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- Navbar Ends -->
+    </section>
+
+    <!-- First Page -->
+    <section class="first-page" style="height: 100vh;">
+        <div class="fp-content-container">
+
+            <p class="fp-header-paragraph">The Universe of printers!</p>
+            <h1 class="fp-header">Lumina.
+                <div class="fp-header-underline"></div>
+            </h1>
+
+
+            <a href="products.html" class="remove-a"><button class="btn-primary fp-btn">Shop Now</button></a>
+            <div class="fp-social-links">
+                <a href="facebook.com" class="fp-social-link" target="_blank"><i class="lni lni-facebook"></i></a>
+                <a href="instagram.com" class="fp-social-link" target="_blank"><i class="lni lni-instagram"></i></a>
+                <a href="twitter.com" class="fp-social-link" target="_blank"><i class="lni lni-twitter"></i></a>
+            </div>
+        </div>
+
+
+    </section>
+
+    <!-- Banner Section -->
+    <!-- Banner section is the first page that opens when the website loads, it contains background image and some phrases about the shop in left hand side and a Call to action Button-->
+    <section class="banner" id="banner">
+        <!-- The image on the banner class is posted using ::before, ::before is a pseudo-element that adds content before the given class -->
+        <div class="container banner-container">
+            <div class="content-container">
+                <div class="banner-text">
+                    <h2>Print Brilliance, Shop Lumina</h2>
+                    <p>Your Ultimate Destination for Printer Perfection!</p>
+
+                    <button class=" btn-primary banner-btn ">
+                        <!-- Call TO Action Button -->
+                        <a href="products.html">Shop Now</a>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Customers Section -->
+    <section class="customers">
+        <div class="c-container container">
+            <div class="c-sec-text">
+                <p>Our customers</p>
+            </div>
+            <div class="c-sec-image-container">
+                <!-- Contains the brand Image of Customers -->
+                <div class="c-sec-image">
+                    <img src="./Images/Home/Customers/apple.png" alt="Apple" />
+                </div>
+                <div class="c-sec-image" id="asus">
+                    <img src="./Images/Home/Customers/asus.png" alt="Asus" />
+                </div>
+                <div class="c-sec-image" id="lg">
+                    <img src="./Images/Home/Customers/lG.png" alt="LG" />
+                </div>
+                <div class="c-sec-image" id="nike">
+                    <img src="./Images/Home/Customers/nike.png" alt="Nike" />
+                </div>
+                <div class="c-sec-image" id="razer">
+                    <img src="./Images/Home/Customers/unedited razer.png" alt="Razer" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Best Sellers Section -->
+    <section class="best-sellers">
+        <div class="b-container container">
+            <div class="b-header-container">
+                <h1>Lumina's Best Selllers
+                    <div class="line"></div>
+                </h1>
+            </div>
+            <!-- This div represents a container for a product in the Lumina website. -->
+            <div class="b-product-container">
+                <!-- b-product contains the best selling items of the shop -->
+                <div class="b-product">
+                    <div class="b-product-desc">
+                        <p class="product-name">LaserJet Pro M15w</p>
+                        <span class="brand-name">Brand: Canon</span>
+                    </div>
+                    <div class="b-product-image">
+                        <img src="./Images/Home/BestSellersProducts/Printer1.png" alt="HP LaserJet Pro M15w"
+                            class="product-image" />
+                    </div>
+
+                    <button class="btn-primary b-btn cart">
+                        Add to cart
+                        <span class="price"><span class="discount-price">Rs 15000</span>Rs 13000</span>
+                    </button>
+
+                </div>
+                <div class="b-product">
+                    <div class="b-product-desc">
+                        <p class="product-name">Epson L130 Ink Tank Single Printer</p>
+                        <span class="brand-name">Brand: Epson</span>
+                    </div>
+                    <div class="b-product-image">
+                        <img src="./Images/Home/BestSellersProducts/Printer2.png" alt="HP LaserJet Pro M15w"
+                            class="product-image" id="printer2" />
+                    </div>
+
+                    <button class="btn-primary b-btn cart">
+                        Add to cart
+                        <span class="price"><span class="discount-price">Rs 20000</span>Rs 18000</span>
+                    </button>
+
+                </div>
+                <div class="b-product">
+                    <div class="b-product-desc">
+                        <p class="product-name">PIXMA TS315 Inkjet printing</p>
+                        <span class="brand-name">Brand: Canon</span>
+                    </div>
+                    <div class="b-product-image">
+                        <img src="./Images/Home/BestSellersProducts/Printer3.png" alt="HP LaserJet Pro M15w"
+                            class="product-image" />
+                    </div>
+
+                    <button class="btn-primary b-btn cart">
+                        Add to cart
+                        <span class="price"><span class="discount-price">Rs 10000</span>Rs 8000</span>
+                    </button>
+
+                </div>
+                <div class="b-product">
+                    <div class="b-product-desc">
+                        <p class="product-name">Multi-function printer Inkjet printing</p>
+                        <span class="brand-name">Brand: Epson</span>
+                    </div>
+                    <div class="b-product-image">
+                        <img src="./Images/Home/BestSellersProducts/Printer4.png" alt="HP LaserJet Pro M15w"
+                            class="product-image" />
+                    </div>
+
+                    <button class="btn-primary b-btn cart">
+                        Add to cart
+                        <span class="price"><span class="discount-price">Rs 30000</span>Rs 28000</span>
+                    </button>
+
+                </div>
+            </div>
+        </div>
+        <!-- Alert -->
+        <div id="cart-alert" class="cart-alert">
+            Item added to cart successfully!
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter ">
+        <div class="container nl-container">
+            <div class="nl-text">
+                <p>STAY IN THE KNOW</p>
+                <h4>Sign up for 10% off your first order.</h4>
+
+            </div>
+
+            <div class="nl-form">
+
+                <input type="email" placeholder="Enter your email address" name="email" id="email" required>
+                <button type="submit" id="subscribe">Subscribe</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories">
+        <div class="categories-container container">
+            <div class="categories-header-container">
+                <h1>Shop By Category
+                    <div class="line"></div>
+                    <h1>
+            </div>
+            <!-- Some of the classes are repeated form the best seller section, to maintain code reusibility -->
+            <div class="categories-product-container">
+                <div class="categories-p">
+                    <div class="b-product-desc category-product-desc">
+                        <p class="product-name categoty-product-name">All In One</p>
+                    </div>
+                    <div class="category-image-container">
+                        <img src="./Images/Home/Category/aio.jpg" alt="All in OnePrinters" class=" category-img" />
+                    </div>
+
+                    <a href="products.html" class="remove-a"> <button class="btn-primary categories-btn">
+                            Shop now
+                        </button></a>
+
+                </div>
+                <div class="categories-p">
+                    <div class="b-product-desc category-product-desc">
+                        <p class="product-name categoty-product-name">Laser Printers</p>
+                    </div>
+                    <div class="category-image-container">
+                        <img src="./Images/Home/Category/laser.jpg" alt="LaserPrinters"
+                            class="laser-printer category-img" />
+                    </div>
+
+                    <a href="products.html" class="remove-a"><button class="btn-primary  categories-btn">
+                            Shop now
+                        </button></a>
+
+                </div>
+                <div class="categories-p">
+                    <div class="b-product-desc category-product-desc">
+                        <p class="product-name categoty-product-name">Inkjet Printers</p>
+                    </div>
+                    <div class="category-image-container">
+                        <img src="./Images/Home/Category/inkjet.jpg" alt="Inkjet Printers"
+                            class=" inkjet-printer category-img" />
+                    </div>
+
+                    <a href="products.html" class="remove-a"><button class="btn-primary categories-btn">
+                            Shop now
+                        </button></a>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Testimonials Sections -->
+    <section class="testimonial">
+        <div class="testimonial-container">
+            <div class="testimonial-header">
+                <h1>Testimonials
+                    <div class="line"></div>
+                </h1>
+            </div>
+            <div class="testimonial-arrows">
+                <button class="testimonial-arrow-left">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="testimonial-arrow-right">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+            <div class="testimonial-slider-container">
+                <!-- contents inside slider are generated using JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <div class="container faq-container">
+            <div class="faq-header">
+                <h1>Frequently Asked Questions
+                    <div class="line"></div>
+                </h1>
+            </div>
+            <div class="qna-container">
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <section class="footer">
+        <footer class="container">
+            <div class="col">
+                <h1 class="logo .f-logo"><a href="#">Lumina.</a></h1>
+                <h4 class="pt-10 capital">Contact</h4>
+                <p class="pt-10 "><strong>Address:</strong> Itahari 07, Sunsari, Nepal</p>
+                <p><strong>E-mail:</strong> Customerservice@lumina.com</p>
+                <p><strong>Phone:</strong> +977 9824448397</p>
+
+                <div class="social-links">
+                    <h4 class="capital">Follow Us</h4>
+                    <a href="#" class="social-link"><i class="lni lni-facebook"></i></a>
+                    <a href="#" class="social-link"><i class="lni lni-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="lni lni-twitter"></i></a>
+
+                </div>
+
+            </div>
+
+            <div class="col">
+                <h4 class="capital">About</h4>
+                <a href="#" class="pt-10">About Us</a>
+                <a href="#">Delivery Information</a>
+                <a href="#">Refund Policy</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Contact Us</a>
+            </div>
+
+            <div class="col">
+                <h4 class="capital">My Account</h4>
+                <a href="#" class="pt-10">Sign In</a>
+                <a href="#">View Cart</a>
+                <a href="#">My Wishlist</a>
+                <a href="#">Track My Order</a>
+                <a href="#">Help</a>
+            </div>
+
+            <div class="col install-app">
+                <h4 class="capital">Install App</h4>
+                <p class="pt-10">From App Store or Google Play</p>
+                <div class="install-row">
+                    <img src="./Images/Store/app.jpg" alt="App Store">
+                    <img src="./Images/Store/play.jpg" alt="Google Play Store">
+                </div>
+                <p class="pt-10">Secured Payement Gateway</p>
+                <img src="./Images/Payment/pay.png" alt="Payement Gateway" class="pt-10">
+            </div>
+
+            <div class="copyright">
+                <p>&copy; Lumina 2024. All Rights Reserved.</p>
+            </div>
+        </footer>
+    </section>
+    <!-- Internal JS -->
+    <script>
+        // Adds Span tag to the marquee container when ever the browser is loaded
+
+        window.addEventListener("load", () => {
+            let i = 0;
+            while (i < 100) {
+                const span = document.createElement("span");
+                span.textContent = "Free Gifts with New Registration";
+                document.querySelector(".marquee-container").appendChild(span);
+                i++;
+            }
+        });
+
+    </script>
+    <!-- External JS -->
+    <script src="./JavaScript/main.js"></script>
+</body>
+
+</html>

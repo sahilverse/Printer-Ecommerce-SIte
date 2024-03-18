@@ -1,0 +1,130 @@
+.main {
+    top: 0 !important;
+}
+
+/* Header */
+header {
+    background-color: var(--text-color-black);
+    color: White;
+    text-align: center;
+    margin-bottom: 30px;
+    padding-top: 70px;
+
+}
+
+header>h1 {
+    font-family: var(--tangerine-font);
+    font-size: 7rem;
+    letter-spacing: 2px;
+    padding: 4rem;
+}
+
+
+
+
+/* Products section */
+
+
+.products-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 3rem;
+
+}
+
+.products-header h2 {
+    font-size: 2rem;
+    font-family: var(--poppins-font);
+}
+
+.products-header .search-bar {
+    border: 2px solid var(--text-color-black);
+    border-radius: 20px;
+    padding: 0.5rem;
+    cursor: pointer;
+    text-align: center;
+}
+
+.products-header .search-bar i {
+    font-size: 1.6rem;
+    padding: 5px;
+}
+
+
+
+.products-header .search-bar #search {
+    font-size: 1.6rem;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    width: 0;
+    opacity: 0;
+    transition: width 0.3s ease-in-out, opacity 0.3s ease-in-out;
+
+}
+
+.products-header .search-bar.active #search {
+    width: 200px;
+    opacity: 1;
+}
+
+.noMatch {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.products-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.25rem;
+    margin: 50px 0 100px 0;
+
+}
+
+.product {
+    text-align: start;
+    border: 1px solid #cccccc;
+    cursor: pointer;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.product img {
+    width: 100%;
+    height: 100%;
+}
+
+.product-d {
+    text-align: start;
+    padding: 20px;
+}
+
+
+.pro-review {
+    padding: 5px 0;
+}
+
+.pro-review>i {
+    font-size: 1.6rem;
+    color: #f57224;
+    padding: 5px 0;
+}
+
+
+
+.product>h4 {
+    font-size: 2rem;
+    font-weight: 500;
+    color: rgb(6, 69, 75);
+}
+
+.product-name {
+    font-family: var(--nunito-font);
+    font-size: 16px !important;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+
+}

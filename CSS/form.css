@@ -1,0 +1,65 @@
+/* Form-col */
+.form-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px !important;
+    margin-bottom: 100px !important;
+}
+
+label {
+    display: block;
+    font-size: 1.5rem;
+    color: var(--text-color-black);
+    font-family: var(--poppins-font);
+    line-height: 1.8;
+    font-weight: normal;
+}
+
+
+
+input,
+textarea {
+    background: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid var(--text-color-black);
+    width: 100%;
+    padding: 1.2rem 1rem;
+    margin-bottom: 1.6rem;
+    margin-top: 1rem;
+    color: var(--text-color-black);
+    font-size: 1.5rem;
+
+}
+
+
+.error {
+    font-size: 1.5rem;
+    color: var(--secondary-color2);
+    font-weight: 200;
+    padding: 0 0 10px 0;
+    color: red;
+}
+
+.submit-form {
+    text-align: right;
+    margin: 3rem 0;
+}
+
+.submit-form button {
+    padding: 1rem 4.2rem;
+    margin-top: 1rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    border-radius: 0.3rem;
+    letter-spacing: .2px;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    float: right;
+
+
+}

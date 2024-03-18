@@ -1,0 +1,183 @@
+/* This is the Utility Class Css to maintain the reusebility of the code */
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700;900&family=Tangerine:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,400;6..12,500;6..12,600;6..12,700;6..12,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Moo+Lah+Lah&display=swap');
+
+/* Custom fonts */
+@font-face {
+    font-family: 'Queens';
+    src: url('../Fonts/Kilotype_Trials/Kilotype_Trials/Queens_Trial/QueensCompressedTrial-Regular.ttf') format('truetype');
+    font-weight: normal;
+}
+
+
+/* variables for colors and fonts */
+:root {
+    --bg-color: #f8f8f8;
+    --text-color-black: #131313;
+    --secondary-color: #72f2c6;
+    --light-gray: #e9e9eb;
+    --text-color-p: #635985;
+    --color-w: #e3e6f3;
+    --color-second: #e8ffce;
+    --color-g: #088178;
+    --color-o: #f57224;
+    --poppins-font: 'Poppins', sans-serif;
+    --roboto-font: 'Roboto', sans-serif;
+    --tangerine-font: 'Tangerine', cursive;
+    --queens-font: 'Queens', serif;
+    --nunito-font: 'Nunito Sans', sans-serif;
+    --work-font: 'Work Sans', sans-serif;
+    --pt-font: 'PT Sans Narrow', sans-serif;
+    --moo-font: 'Moo Lah Lah', cursive;
+}
+
+
+
+/* changes the background color and text color of selected element */
+::selection {
+    background-color: var(--text-color-black);
+    color: var(--bg-color);
+
+}
+
+/* Global css */
+html {
+    font-size: 62.5%;
+    /* Here, 62.5% = 10px = 1rem */
+    scroll-behavior: smooth;
+
+
+}
+
+/* removes default margin and padding on all elements and ensure a consistent box model across different browsers. */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+/* Adds a line */
+.line {
+
+    background-color: #000;
+    height: 1px;
+    margin: 20px 0 60px 0;
+    width: 93px;
+    margin-bottom: 40px;
+}
+
+/* removes underline and other properties from anchor tag */
+.remove-a {
+    text-decoration: none;
+    color: var(--text-color-black);
+
+}
+
+/* Padding top  */
+.pt-10 {
+    padding-top: 10px;
+
+}
+
+/* capital letter */
+.capital {
+    text-transform: uppercase;
+}
+
+/* logo: so it is consistant all over the website */
+.logo a {
+    text-decoration: none;
+    font-family: var(--poppins-font);
+    font-size: 3rem;
+    color: var(--light-gray);
+    font-weight: 700;
+}
+
+/* container: holds the elements */
+.container {
+    max-width: 1440px;
+    padding: 0 30px;
+    margin: auto;
+}
+
+
+/* Buttons Styling: reusable and creates consistancy */
+.btn-primary {
+    padding: 16px 10px 14px;
+    min-width: 347px;
+    border: none;
+    background-color: var(--text-color-black);
+    text-transform: uppercase;
+    color: var(--bg-color);
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    font-family: var(--poppins-font);
+
+}
+
+.btn-primary a {
+    text-decoration: none;
+    color: var(--bg-color);
+}
+
+/* Hover effect for button */
+.btn-primary:hover {
+    background-color: var(--secondary-color);
+    color: var(--text-color-black);
+}
+
+.btn-primary:hover a {
+    color: var(--text-color-black);
+}
+
+/* Secondary button styling */
+
+.btn-secondary {
+    border: none;
+    cursor: pointer;
+    min-width: 250px;
+    padding: 20px 10px 18px;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 400;
+    background-color: var(--secondary-color);
+    color: var(--text-color-black);
+    transition: all 0.3s ease-in-out;
+    font-family: var(--poppins-font);
+
+}
+
+/* Hover effect for button */
+.btn-secondary:hover {
+    background-color: var(--light-gray);
+    color: var(--text-color-black);
+}
+
+/* Discounted price styling: Creating linethrough */
+.discount-price {
+    text-decoration: line-through;
+    font-size: 1.4rem;
+    font-weight: 400;
+    font-family: var(--poppins-font);
+    padding-right: 10px;
+}

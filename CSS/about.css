@@ -1,0 +1,205 @@
+/* about Header */
+.about-header-inside-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-header {
+    font-size: 3rem;
+    font-weight: 700;
+    font-family: var(--nunito-font);
+    letter-spacing: 3px;
+    margin-bottom: 1.6rem;
+}
+
+/* Portfolio section */
+
+.portfolio-section {
+    max-width: 968px !important;
+    margin-bottom: 10rem !important;
+
+
+}
+
+
+
+.portfolio-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15rem;
+}
+
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.top {
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+
+}
+
+.bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.top-reverse {
+    flex-direction: row-reverse;
+    gap: 4rem;
+    text-align: end;
+    align-items: center;
+}
+
+.details-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.pf-name {
+    font-family: var(--poppins-font);
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+    color: var(--color-g);
+}
+
+.student-college {
+    font-family: var(--poppins-font);
+    font-size: 1.8rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.college-name,
+.head-skill {
+    font-family: var(--poppins-font);
+    font-size: 1.8rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: var(--text-color-p);
+}
+
+
+.pf-img-container img {
+    width: 23rem;
+    border: 0.4rem solid var(--text-color-p);
+    border-radius: 1rem;
+}
+
+.pf-contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+    margin-top: 2rem;
+}
+
+.reverse-contact {
+    flex-direction: column-reverse;
+    gap: 1.4rem;
+    text-align: right;
+    align-items: flex-end;
+
+}
+
+.pf-icon-container {
+    display: flex;
+    gap: 1rem;
+    font-size: 1.6rem;
+    font-family: var(--poppins-font);
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+    align-items: center;
+    color: var(--text-color-p);
+
+}
+
+.pf-icon-container i {
+    font-size: 2rem;
+    color: var(--text-color-p);
+}
+
+.education-detail-container {
+    width: 100%;
+}
+
+.education-detail-container p {
+    font-family: var(--poppins-font);
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: var(--text-color-p);
+    margin-bottom: 1rem;
+}
+
+.education-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 0.2rem solid var(--text-color-p);
+    text-align: center;
+}
+
+.education-table th {
+    font-family: var(--poppins-font);
+    font-size: 1.8rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: var(--text-color-p);
+    padding: 1rem 0;
+    border: 0.2rem solid var(--text-color-p);
+}
+
+.education-table td {
+    font-family: var(--poppins-font);
+    font-size: 1.8rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: var(--text-color-p);
+    padding: 1rem 0;
+    border: 0.2rem solid var(--text-color-p);
+}
+
+/* Skill Section */
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.skills-container p {
+    font-family: var(--poppins-font);
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: var(--text-color-p);
+
+}
+
+.skill-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.skill-image-container {
+    text-align: center;
+    cursor: pointer;
+
+}
+
+.skill-image {
+    width: 10rem;
+}
+
+#html {
+    width: 18rem;
+}
